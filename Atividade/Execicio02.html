@@ -11,7 +11,24 @@
     deverá convertê-lo para hora, minutos e segundos. Todas as variáveis devem ser
     passadas como parâmetro, não havendo variáveis globais. -->
     <script>
-        var segundo = parseFloat(prompt('Digite o tempo em segundo para ser convertido:'))
+        var hora = Math.floor(segundo / 3600)
+        var minuto = Math.floor((segundo - (hora*3600) / 60))
+        var segundo = (segundo - (hora*3600) - (minuto*60))
+
+
+
+
+
+
+
+
+        // var segundo = parseFloat(prompt('Digite o tempo em segundo para ser convertido:'))
+        // function fun1 (){
+        //     var horas = Math.round() .horas
+        //     var minuto = Math.round() .minuto
+
+        //     console.log(`Suas horas são ${horas} e ${minuto}`)
+        // }
     </script>
 </body>
 </html>
