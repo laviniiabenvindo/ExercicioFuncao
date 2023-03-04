@@ -12,7 +12,7 @@
         var num1 = parseFloat(prompt("Digite sua primeira nota:"))
         var num2 = parseFloat(prompt("Digite sua segunda nota:"))
         var num3 = parseFloat(prompt("Digite sua terceira nota:"))
-        var letra = prompt("Digite uma letra A ou P:")
+        var letra = prompt("Digite uma letra A para a média aritmética ou P para a média ponderada:")
         
 
         function fun1 (num1, num2, num3, letra){
@@ -24,7 +24,10 @@
                 document.write("Sua média ponderada é "+(((num1*5) + (num2*3) + (num3*2))/10))
             }
         }
+
         fun1 (num1, num2, num3, letra)
     </script>
+    <!-- Usei "Var" para declarar as variavéis "num1, num2, num3, letra" que iria armazenar o dado que o usuario digitar
+    user o "Function" para ler as variavéis e por ultimo usei o "if e else if" para fazer a média aritmética e a ponderada. -->
 </body>
 </html>

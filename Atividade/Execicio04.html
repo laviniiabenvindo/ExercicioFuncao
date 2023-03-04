@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 04</title>
+</head>
+<body>
+
+    <script>
+        function numero() {
+        let maiorN = Number.MIN_SAFE_INTEGER;
+        let menorN = Number.MAX_SAFE_INTEGER;
+
+        for (let i = 0; i < 5; i++) {
+        const valor = parseInt(prompt(`Digite 5 números:`));
+            if (valor > maiorN) {
+            maiorN = valor;
+            }
+            if (valor < menorN) {
+            menorN = valor;
+            }
+        }
+        console.log(`O maior valor é ${maiorN} e o menor valor é ${menorN}`)
+        }
+    
+        numero()
+    </script>
+    <!-- Usei o min safe integer e o max safe integer para encontar o maior e menor valor digitado
+    tudo foi feito no escope local, e por ultimo usei o if para encontar e retomar os valores -->
+</body>
+</html>
